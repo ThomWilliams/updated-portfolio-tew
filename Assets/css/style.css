@@ -44,15 +44,14 @@ nav {
     background-color: var(--dark);
 }
 
-nav a {
+a {
     color: var(--tertiary);
     padding-right: 15px;
     text-decoration: none;
-    font-size: 1rem;
     word-spacing: -5px;
 }
 
-nav a:hover {
+a:hover {
     color: var(--quinary);
 }
 
@@ -283,6 +282,15 @@ aside h2 {
     background-image: url(../images/weather-app.png);
     background-size: cover;
 }
+
+.linkedIn-pic {
+    max-width: 50px;
+}
+
+.twitter-pic {
+    max-width: 50px;
+}
+
 
 /* Expands and highlights each portfolio example */
 
