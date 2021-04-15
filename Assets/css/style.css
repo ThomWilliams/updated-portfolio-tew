@@ -1,0 +1,336 @@
+* { 
+    box-sizing: border-box;
+}
+
+/*CSS variables define colour scheme */
+
+:root {
+--primary: #1d4375;
+--secondary: #36383b;
+--tertiary: rgb(255, 197, 98);
+--quaternary: rgb(230, 230, 240);
+--quinary: #2566bc;
+--dark: #160b01;
+--light: #e7dfd8;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--secondary);
+    line-height: 1.5;
+    background-image: linear-gradient(to bottom, var(--light), var(--primary));
+}
+
+h1, 
+h2, 
+h3,
+h4,
+h5, 
+h6 {
+    margin: 0;
+
+}
+
+p {
+    margin: 0;
+}
+
+/* Navigation Bar stylings */
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: var(--dark);
+}
+
+nav a {
+    color: var(--tertiary);
+    padding-right: 15px;
+    text-decoration: none;
+    font-size: 1rem;
+    word-spacing: -5px;
+}
+
+nav a:hover {
+    color: var(--quinary);
+}
+
+/*Header stylings */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+/* header background image */
+header {
+    background-image: url(../images/laptop-hero-image.jpeg);
+    background-size: 50%;
+}
+
+header h1 { 
+    align-items: center;
+    text-align: center;
+    background-color: var(--dark);
+    color: var(--light);
+    border-radius: 50%;
+    border-style: ridge;
+    Padding: 15px;
+    margin: 10px;
+    font-size: 3rem;
+    font-family: monospace;
+}
+
+/* "Web development portfolio" hero banner */
+.hero-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:var(--dark);
+    margin-top: var(--light);
+    margin-top: 1px;
+}
+
+.hero-banner > h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-style:unset;
+    color: var(--light);
+}
+
+/* Container for main body of website including contact sidedebar aside, About Me and Examples sections */
+main {
+    display: flex;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Determines Aside bar with contact details */
+
+aside {
+    display: flex;
+    flex-direction: column;
+    min-width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 1px;
+    margin-top: 20px;
+    border-style:outset;
+    border-width: 2px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: var(--quaternary);
+}
+
+/* determines individual items in the aside*/
+
+.sidebar-item {
+    display: flex;
+    min-width: 100%;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--tertiary);
+    margin-bottom: 5px;
+    margin-top: 1px;
+    font-size: 0.9rem;
+    padding: 15px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    font-family: courier;
+    border-style: outset;
+    border-width: thin;
+}
+
+aside h2 {
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+
+.sidebar-item ul {
+    list-style-position: inside;
+    padding-left: 5px;
+}
+
+/*profile image of Thom Williams*/
+
+.profile-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: auto;
+    display: inline-block;
+}
+
+/* Grows profile image on click */
+
+.profile-image:active {
+    transform: scale(2);
+}
+
+/* Container for About Me and Examples */
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    min-width: 70%;
+}
+
+/* Style About Me and Examples */
+
+.main-section {
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    background-color: var(--tertiary);
+    border-radius: 5%;
+    border-style:outset;
+}
+
+.main-section > h2 {
+    font-size: 1.5rem;
+   color: var(--primary);
+}
+
+.main-section p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-family: courier;
+    width: 100%;
+    padding: 5px;
+}
+
+
+/*Flex container container for Portfolio Applications */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: space-evenly;
+}
+
+/* Style for each portfoilo example */
+.flex-item {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-color: var(--secondary);
+    margin: 5px;
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1rem);
+    text-decoration: none;
+}
+
+/* Larger first example */
+.flex-item:first-child {
+    max-height: 250px;
+    min-height: 250px;
+    flex-basis: calc(100% - 1rem);
+}
+
+.flex-item > h3 {
+    font-size: 1rem;
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 3px;
+}
+
+.flex-item > h4 {
+    font-size: 0.8rem;
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 2px;
+}
+
+/* Application Example images */
+.application-1-pic {
+    background-image: url(../images/hammered-horror.png);
+    background-size: cover;
+}
+
+.application-2-pic {
+    background-image: url(../images/work-day-scheduler.png);
+    background-size: cover;
+}
+
+.application-3-pic {
+    background-image: url(../images/coding-quiz.png);
+    background-size: cover;
+}
+
+.application-4-pic {
+    background-image: url(../images/Assignment_1_Code_Refactor.png);
+    background-size: cover;
+}
+
+.application-5-pic {
+    background-image: url(../images/weather-app.png);
+    background-size: cover;
+}
+
+/* Expands and highlights each portfolio example */
+
+.flex-item:hover {
+    border-color: var(--quinary);
+    transform: scale(1.02);
+}
+
+/* Footer styling */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--dark);
+    color: var(--tertiary);
+    margin-top: 5%;
+}
+
+
+/* Media Query for Phones and Tablets */
+
+@media screen and (max-width: 768px) { 
+ 
+    aside {
+        max-width: 75%;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        text-justify: space-evenly;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        min-width: 100%;
+        margin: auto;
+        padding: 5px;
+    }
+
+    .main-body {
+        margin-left: 0;
+    }
+
+    .profile-image:hover {
+        transform: none;
+    }
+}
