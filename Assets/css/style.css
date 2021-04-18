@@ -284,13 +284,29 @@ aside h2 {
 }
 
 .linkedIn-pic {
-    max-width: 50px;
+    max-width: 45px;
+    border-radius: 25px;
 }
 
-.twitter-pic {
-    max-width: 50px;
+.GitHub-pic {
+    max-width: 45px;
+    border-radius: 25px;
 }
 
+.email-pic {
+    max-width: 45px;
+    border-radius: 25px;
+}
+
+.cv-pic {
+    max-width: 45px;
+    border-radius: 25px;
+}
+
+.icon:hover {
+    border-color: var(--quinary);
+    transform: scale(1.2);
+}
 
 /* Expands and highlights each portfolio example */
 
